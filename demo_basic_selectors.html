@@ -1,0 +1,90 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title> jQuery tests </title>
+ </head>
+ <body>
+
+ <div id="main_wrap" class="container">
+ 
+    <nav id="navbar" class="container">
+ 
+       <a href="/">home</a>
+       <a href="/blog">blog</a>
+       <a href="/about">about</a>
+ 
+    </nav>
+ 
+    <div id="content" class="container">
+ 
+        <p>The Foo Man Chew shal always be in style.</p>
+ 
+    </div>
+ 
+    <div id="footer" class="container">
+ 
+        <p>Copyright 2017 Demo Comapny LLC</p>
+ 
+    </div>
+ 
+ </div>
+ 
+ 
+ <script src="jquery_3_2_1.js"></script>
+
+ <script>
+ 
+ /*
+ // the all selector
+ $('*').each(function(i,el){
+ 
+      console.log(el); // all elements
+ 
+ });
+ */
+ 
+ /*
+ // Selecting by class
+ $('.container').each(function(i,el){
+ 
+      console.log(el.className); // container 4x
+ 
+ });
+ */
+ 
+ // Selecting by id
+ /*
+ $('#main_wrap').each(function(i,el){
+ 
+      console.log(el.children.length); //  3 child elements
+ 
+ });
+ */
+ 
+  $('p').each(function(i,el){
+ 
+      console.log(el); // all p elements
+ 
+ });
+ 
+ /*
+  // more than one selection
+  $('a,p,#footer').each(function(i,el){
+ 
+      console.log(el.innerHTML); //  all text in the a, and p elements, and the footer
+ 
+ });
+ */
+ /*
+ // select all paragraph elements inside a div with an id of warp
+ $('p', $('div.container') ).each(function(i,el){
+ 
+      console.log(el.innerHTML);
+ 
+ });
+ */
+ </script>
+ 
+ 
+ </body>
+</html>
