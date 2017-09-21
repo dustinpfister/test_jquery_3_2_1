@@ -1,0 +1,52 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title> jQuery tests </title>
+ </head>
+ <body>
+
+ <div id="main_wrap" class="container">
+ 
+    <p>div one</p>
+    <p>div two</p>
+    <div>
+
+       <p>div div nested one</p>
+
+    </div>
+ 
+ </div>
+ 
+ <article class="container">
+    
+    <p>article one</p>
+ 
+ </article>
+ 
+ <p>outside</p>
+ 
+ 
+ <script src="jquery_3_2_1.js"></script>
+
+ <script>
+ 
+ // the all selector
+ $('*').each(function(i,el){
+ 
+      console.log(el);
+ 
+ });
+ 
+ /*
+ // select all paragrah elements inside a div with an id of warp
+ $('p', $('div.container') ).each(function(i,el){
+ 
+      console.log(el.innerHTML);
+ 
+ });
+ */
+ </script>
+ 
+ 
+ </body>
+</html>
