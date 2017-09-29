@@ -7,6 +7,15 @@
 
  <script src="../jquery_3_2_1.js"></script>
 
+ <div id="the_div">I am the div</div>
+<script>
+document.getElementById('the_div').addEventListener('mousedown', function(e){
+ 
+   console.log(e.target.innerHTML); // I am the div
+ 
+});
+</script>
+ 
  <p>one</p>
  <p>two</p>
  <p>three</p>
