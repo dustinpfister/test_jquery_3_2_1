@@ -22,15 +22,27 @@ document.getElementById('the_div').addEventListener('mousedown', function(e){
  
  <script>
  
+ /*
+ console.log(document.querySelectorAll('p'));
+ 
  [].forEach.call(document.getElementsByTagName('p'), function(el){
+ 
+ //document.querySelectorAll('p').forEach(function(el){
  
     el.addEventListener('mousedown', function(e){
  
-        console.log(e.target.innerHTML); // I am the div
+        console.log(e.target.innerHTML); // the inner text of the p element
  
     });
  
  });
+ */
+ 
+$('p').mousedown(function(e){
+ 
+    console.log(e.target.innerHTML); // I am the div
+ 
+});
  
  </script>
  
