@@ -20,6 +20,20 @@ document.getElementById('the_div').addEventListener('mousedown', function(e){
  <p>two</p>
  <p>three</p>
  
+ <script>
+ 
+ [].forEach.call(document.getElementsByTagName('p'), function(el){
+ 
+    el.addEventListener('mousedown', function(e){
+ 
+        console.log(e.target.innerHTML); // I am the div
+ 
+    });
+ 
+ });
+ 
+ </script>
+ 
  <div class="action"> action 1</div>
  <div class="action"> action 2</div>
  <div class="action"> action 3</div>
