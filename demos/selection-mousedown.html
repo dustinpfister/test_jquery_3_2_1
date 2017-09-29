@@ -1,0 +1,53 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title> jQuery tests </title>
+ </head>
+ <body>
+
+ <script src="../jquery_3_2_1.js"></script>
+
+ <p>one</p>
+ <p>two</p>
+ <p>three</p>
+ 
+ <div class="action"> action 1</div>
+ <div class="action"> action 2</div>
+ <div class="action"> action 3</div>
+ 
+ <script>
+ 
+    //$('p').keydown()
+
+console.log($.fn);
+
+var pConf = {
+ 
+    //locked : false,
+    lastAction : new Date(),
+    rate : 3000
+ 
+};
+
+ $('div.action').mousedown(pConf,function(e){
+ 
+    var now = new Date(),
+    t = now - e.data.lastAction;
+ 
+    if(t < e.data.rate){
+ 
+        console.log('locked');
+ 
+    }else{
+
+        console.log(e.target.innerHTML);
+        e.data.lastAction = now;
+ 
+    }
+ 
+ });
+ 
+ </script>
+ 
+ </body>
+</html>
