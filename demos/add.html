@@ -5,11 +5,31 @@
  </head>
  <body>
 
+ <div id="section_one">
+     <p>foo 1</p>
+     <p>foo 2</p>
+     <p>foo 3</p>
+ </div>
+ 
+ <div id="section_two">
+     <p>man 1</p>
+     <p>man 2</p>
+     <p>man 3</p>
+ </div>
+ 
+ <p>chew 1</p>
+ <p>chew 2</p>
+ <p>chew 3</p>
+ 
  <script src="../jquery_3_2_1.js"></script>
 
  <script>
  
- console.log( $('p') );
+$('body>p').add( $('#section_one>p')).each(function(){
+
+    console.log(this);
+
+});
  
  </script>
  
