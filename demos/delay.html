@@ -1,0 +1,31 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title> jQuery tests </title>
+ <style>
+.text_red{
+
+color:red;
+
+}
+ </style>
+ 
+ </head>
+ <body>
+ 
+ <p>delay</p>
+ 
+ <script src="../jquery_3_2_1.js"></script>
+
+ <script>
+ 
+ $('p').delay(3000).fadeOut(1000, function(){
+ 
+ console.log('animation done');
+ 
+ });
+ 
+ </script>
+ 
+ </body>
+</html>
