@@ -1,0 +1,38 @@
+ <!doctype html>
+ <html>
+ <head>
+ <title> jQuery tests </title>
+ <style>
+ 
+.text_nice{color:red;}
+ </style>
+ </head>
+ <body>
+
+ <!--
+<div class="wrap_main">
+    <p class="text_nice">one</p>
+    <p class="text_nice">two</p>
+    <p class="text_nice">three</p>
+    <p class="text_nice">four</p>
+    <p class="text_nice">tive</p>
+</div>
+-->
+<div class="wrap_main">
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <p>four</p>
+    <p>five</p>
+</div>
+ 
+ <script src="../jquery_3_2_1.js"></script>
+
+ <script>
+ 
+$('.wrap_main>p').addClass('text_nice');
+ 
+ </script>
+ 
+ </body>
+</html>
